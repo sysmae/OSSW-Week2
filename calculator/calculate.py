@@ -17,7 +17,7 @@ def get_float_input(prompt):
         try:
             return float(input(prompt))
         except ValueError:
-            print("Error: Invalid input. Please enter a numeric value.")
+            print("숫자가 아닙니다. 다시 입력하세요.")
 
 if __name__ == '__main__':
     while True:
