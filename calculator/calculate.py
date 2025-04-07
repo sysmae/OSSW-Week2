@@ -22,22 +22,22 @@ def get_float_input(prompt):
 if __name__ == '__main__':
     while True:
         # 사용자 입력
-        input1 = get_float_input('\n첫번째 숫자를 입력하세요: 입력: ')
+        num1 = get_float_input('\n첫번째 숫자를 입력하세요: 입력: ')
 
         print('\n원하는 사칙연산 기호 중 하나를 선택하세요. (+, -, *, /)')
         act = input("기호: ")
 
-        input2 = get_float_input('\n두번째 숫자를 입력하세요: 입력: ')
+        num2 = get_float_input('\n두번째 숫자를 입력하세요: 입력: ')
 
         # 연산 수행
         if act == '+':
-            result = plus(input1, input2)
+            result = plus(num1, num2)
         elif act == '-':
-            result = minus(input1, input2)
+            result = minus(num1, num2)
         elif act == '*':
-            result = mul(input1, input2)
+            result = mul(num1, num2)
         elif act == '/':
-            result = divide(input1, input2)
+            result = divide(num1, num2)
         else:
             result = "Error: Invalid operation"
 
